@@ -1,0 +1,26 @@
+{
+	"name": "CORS Toggle",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Adds Access-Control-Allow-Origin, Access-Control-Allow-Methods and Access-Control-Allow-Headers headers for CORS.",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"icons": {
+	    "64": "icon.64.png",
+	    "128": "icon.128.png"
+	},
+	"browser_action": {
+		"default_icon": "off.png",
+		"default_title": "CORS Toggle"
+	},
+	"permissions": [
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
+	"web_accessible_resources": [
+		"on.png","off.png"
+	]
+}
